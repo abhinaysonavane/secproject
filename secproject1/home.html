@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Automation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>House Automation System</h1>
+        
+        <!-- Light Control -->
+        <div class="device">
+            <h2>Light Control</h2>
+            <button class="btn" onclick="toggleLight()">Turn on/off Light</button>
+            <p id="lightStatus">The light is OFF.</p>
+        </div>
+
+        <!-- Fan Control -->
+        <div class="device">
+            <h2>Fan Control</h2>
+            <button class="btn" onclick="toggleFan()">Turn on/off Fan</button>
+            <p id="fanStatus">The fan is OFF.</p>
+        </div>
+
+        <!-- Thermostat Control -->
+        <div class="device">
+            <h2>Thermostat Control</h2>
+            <input type="number" id="temperatureInput" placeholder="Enter temperature (°C)" min="0" max="50">
+            <button class="btn" onclick="setTemperature()">Set Thermostat</button>
+            <p id="thermostatStatus">Thermostat is not set.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
